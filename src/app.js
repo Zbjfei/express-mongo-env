@@ -14,6 +14,7 @@ app.use(bodyParser.json());
 
 const employees = require('./routes/employees');
 
+// http://127.0.0.1:8080/api/employees/
 app.use('/api/employees', employees);
 
 app.use(notFound);
